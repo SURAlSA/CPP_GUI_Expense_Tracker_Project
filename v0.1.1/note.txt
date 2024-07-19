@@ -1,0 +1,2 @@
+// compile command 
+g++ -o test main_window.cpp -lSDL2 -lSDL2_ttf
