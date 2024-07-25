@@ -2,7 +2,8 @@
 #include <SDL2/SDL.h>
 #include "MainWindow.h"
 
-int main() {
+int main() 
+{
     SDL_Window* window = nullptr;
     SDL_Renderer* renderer = nullptr;
 
@@ -19,11 +20,14 @@ int main() {
     SDL_Event e;
 
     // While application is running
-    while (!quit) {
+    while (!quit) 
+    {
         // Handle events on queue
-        while (SDL_PollEvent(&e) != 0) {
+        while (SDL_PollEvent(&e) != 0) 
+        {
             quit = checkForQuit(e); // check if user requests quit
-            if (e.type == SDL_MOUSEBUTTONDOWN) {
+            if (e.type == SDL_MOUSEBUTTONDOWN) 
+            {
                 mouseClicked(e);
             }
         }
